@@ -1,4 +1,4 @@
- const API_KEY = "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"; // 🔐 Replace with your actual API key
+ const API_KEY = ""; // 🔐 Replace with your actual API key
   const input = document.getElementById("userInput");
   const sendBtn = document.getElementById("sendBtn");
   const messagesContainer = document.getElementById("messagesContainer");
