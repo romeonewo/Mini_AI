@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <title>MIni AI</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+<div class="app-container">
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <button class="new-chat-btn">
+      <span>+</span> New Chat
+    </button>
+    <div class="history" id="history">
+      <!-- History items will be added here -->
+    </div>
+    <div class="sidebar-footer">
+      Mini AI - Explore the future
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="chat-header">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="logo">🌀 MIni AI</div>
+      <div></div> <!-- Empty div for flex spacing -->
+    </div>
+
+    <!-- Welcome screen (shows before chat begins) -->
+    <div class="welcome-screen" id="welcomeScreen">
+      <h1 class="welcome-title">Welcome to MIni AI</h1>
+      <p class="welcome-subtitle">Your guide through the digital frontier. Ask me anything or try one of these examples:</p>
+      <div class="example-questions">
+        <div class="example-question">Explain quantum computing in simple terms</div>
+        <div class="example-question">Create a sci-fi short story about AI and humanity</div>
+        <div class="example-question">What are the latest advancements in renewable energy?</div>
+        <div class="example-question">Design a workout routine for beginners</div>
+      </div>
+    </div>
+
+    <!-- Messages will be displayed here -->
+    <div class="messages-container" id="messagesContainer" style="display: none;">
+      <!-- Messages will be added here -->
+    </div>
+
+    <!-- Input area -->
+    <div class="input-area">
+      <div class="input-container">
+        <textarea class="input-box" id="userInput" placeholder="Ask MIni AI anything..." rows="1"></textarea>
+        <button class="send-btn" id="sendBtn">↑</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
